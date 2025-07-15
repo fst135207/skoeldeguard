@@ -36,7 +36,7 @@ export function Header({
 
   return (
     <>
-      <header className="px-4 sm:px-6 lg:px-8 py-6 relative z-50">
+      <header className="px-4 sm:px-6 lg:px-8 py-6 absolute top-0 left-0 w-full z-50 bg-transparent">
         <nav className="flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo */}
           <div className="text-white font-bold text-xl sm:text-2xl">{logo}</div>
