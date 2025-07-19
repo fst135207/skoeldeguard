@@ -9,6 +9,7 @@ const sidebarItems = [
   { id: "security", name: "Security & Infrastruktur" },
   { id: "cloud", name: "Cloud & Digitalisierung" },
   { id: "it", name: "IT & Support" },
+  { id: "training", name: "IT-Strategie & Weiterbildung" },
 ]
 
 const services = [
@@ -57,6 +58,22 @@ const services = [
     category: "it",
     title: "IT-Support & Beratung",
     description: "Schnelle Hilfe & verständliche Beratung – persönlich, ehrlich, direkt erreichbar.",
+    icon: MessageCircleMore,
+    color: "text-red-500",
+  },
+  {
+    id: 7,
+    category: "training",
+    title: "IT-Schulungen für Mitarbeitende",
+    description: "Praktische Schulungen zu Microsoft 365, digitaler Zusammenarbeit und IT-Grundlagen – verständlich, individuell und direkt im Arbeitsalltag anwendbar.",
+    icon: MessageCircleMore,
+    color: "text-red-500",
+  },
+  {
+    id: 8,
+    category: "training",
+    title: "Cyber Awareness-Trainings",
+    description: "Schützen Sie Ihr Unternehmen mit verständlichen Trainings zu Phishing, Passwörtern & Co – für mehr Sicherheitsbewusstsein bei allen Mitarbeitenden.",
     icon: MessageCircleMore,
     color: "text-red-500",
   },
