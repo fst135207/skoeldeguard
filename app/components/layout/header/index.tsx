@@ -1,5 +1,5 @@
 "use client"
-
+import Link from "next/link"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
@@ -17,8 +17,8 @@ interface HeaderProps {
 
 export function Header({
   navigationItems = [
-    { href: "#services", label: "Services" },
-    { href: "#about", label: "Über uns" },
+    { href: "/#services", label: "Services" },
+    { href: "/about-us", label: "Über uns" },
     { href: "#certificates", label: "Zertifikate" },
   ],
   logo = "SköldGuard",
@@ -39,7 +39,7 @@ export function Header({
       <header className="px-4 sm:px-6 lg:px-8 py-6 absolute top-0 left-0 w-full z-50 bg-transparent">
         <nav className="flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo */}
-          <div className="text-white font-bold text-xl sm:text-2xl">{logo}</div>
+          <Link href="/" className="text-white font-bold text-xl sm:text-2xl">{logo}</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
